@@ -34,8 +34,7 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
                             type='text '
                             value={todo.title}
                             onChange={(e) => e.preventDefault()}
-                            onClick={(e) => e.target.value}
-                            className={`list ${(todo.completed) ? "completed" : ""}`}
+                            className={`list ${(todo.completed) ? "complete" : ""}`}
                         />
                         <div>
                             <button className='button-complete task-button' onClick={() => handleComplete(todo)} >
