@@ -32,7 +32,7 @@ const Form = ({ input, todos, setInput, setTodos, editTodo, setEditTodo }) => {
 
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <input
                 type='text'
                 placeholder='Todos-List'
@@ -41,7 +41,7 @@ const Form = ({ input, todos, setInput, setTodos, editTodo, setEditTodo }) => {
                 required
                 onChange={handleInput} />
             <button className='button-add' type='submit'  >
-                {editTodo ? "ok" : "add"}
+                {editTodo ? "Save" : "Add"}
             </button>
         </form>
     )
